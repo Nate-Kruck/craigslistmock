@@ -1,0 +1,94 @@
+
+body {
+    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
+  
+    
+    --header-height: 80px;
+    --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
+    --gutter: 30px;
+    --footer-height: 25px;
+
+    
+    font-family: 'Titillium Web', sans-serif;
+
+    
+}
+
+
+.flex-container {
+    height: 100%;
+    width: 100%;
+    max-width: 980px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 200px 100px;
+    
+}
+
+.border {
+    border: solid 1px;
+    height: 150px;
+    width: 100px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.content {
+    display: flex;
+    height: 100%;
+
+
+}
+
+.community {
+    grid-area: community;
+    display: flex;
+}
+
+.services {
+    grid-area: services;
+}
+
+.discussion-forums {
+    grid-area: discussion-forums;
+}
+
+.housing {
+    grid-area: housing;
+}
+
+.for-sale {
+    grid-area: for-sale;
+}
+
+.jobs {
+    grid-area: jobs;
+}
+
+.gigs {
+    grid-area: gigs;
+}
+
+.resumes {
+    grid-area: resumes;
+}
+
+
+section {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+        "community housing jobs"
+        "community housing jobs"
+        "community housing jobs"
+        "service housing jobs"
+        "service for-sale jobs"
+        "service for-sale jobs"
+        "discussion for-sale gig"
+        "discussion for-sale resumes";
+}
+
+
+    
+
